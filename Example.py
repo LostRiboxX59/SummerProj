@@ -4,7 +4,7 @@ import numpy as np
 from datetime import datetime
 
 detector = ObjectDetector(
-    model_path="output/model_final.pth",
+    model_path="model_final.pth",
     num_classes=1,
     confidence_threshold=0.7,
     device="cpu"
@@ -53,4 +53,5 @@ while True:
 
 detector.release()
 cv2.destroyAllWindows()
+
 
